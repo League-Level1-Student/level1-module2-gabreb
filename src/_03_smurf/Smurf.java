@@ -13,7 +13,7 @@ package _03_smurf;
  */
 
 public class Smurf {
-
+	String HatColor = "red";
 	private String name;
 
 	Smurf(String name) {
@@ -31,11 +31,24 @@ public class Smurf {
 	/* Papa Smurf wears a red hat, all the others are white. */
 	public String getHatColor() {
 		// 3. Fill in this method
+		if (name == "Papa Smurf") {
+			System.out.println("The hat color of your smurf is " + HatColor + ".");
+		}
+		else  {
+			HatColor = "white";
+			System.out.println("The hat color of your smurf is " + HatColor + ".");
+		}
 		return "";
 	}
 
 	/* Smurfette is the only female Smurf. */
 	public String isGirlOrBoy() {
+		if (name == "Smurfette") {
+			System.out.println("Your smurf is a girl!");
+		}
+		else {
+			System.out.println("Your smurf is a boy!");
+		}
 		// 4. Fill in this method
 		return "";
 	}
