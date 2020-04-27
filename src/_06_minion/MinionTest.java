@@ -32,7 +32,46 @@ This is because there is no Minion class in the package.
   To check, run this MinionTest class and the JUnit tab should show a GREEN bar.
     
  */
-
+class Minion {
+		private String name; 
+		private int eyes; 
+		private String color; 
+		private String master;
+		void setMaster(String w) {
+			master = w;
+		
+		}
+		void setName (String n) {
+			name = n;
+		}
+		void setEyes (int e) {
+			eyes = e;
+		}
+		void setColor (String c) {
+			color = c;
+		}
+		
+		String getName () {
+			return this.name;
+		}
+		int getEyes () {
+			return this.eyes;
+		}
+		String getColor () {
+			return this.color;
+		}
+		String getMaster() {
+			return this.master;
+		}
+ 		
+		
+		Minion (String name , int eyes, String color, String master) {
+			this.name  = name;
+			this.color = color;
+			this.eyes = eyes;
+			this.master = master; 
+		}
+}
 public class MinionTest {
 
 	@Test
